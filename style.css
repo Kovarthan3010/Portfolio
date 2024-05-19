@@ -146,6 +146,8 @@
 }
 table {
   border-collapse: collapse;
+  width: 95%;
+  table-layout: auto;
 }
 th,
 td {
