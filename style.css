@@ -1,124 +1,233 @@
-#navListinHeader{
-    background-color: blue;
-    border: 2px solid blue;
-    border-radius: 10px;
-    margin: 2px;
-    padding: 15px;
+#navListinHeader {
+  background-color: blue;
+  border: 2px solid blue;
+  border-radius: 10px;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 700px) {
+  #navListinHeader {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    background-color: whitesmoke;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+  }
 }
-.navListClass{
-    text-decoration: none;
-    padding-left: 40px;
-    color: white;
-    font-size: larger;
+.navListClass {
+  text-decoration: none;
+  padding-left: 40px;
+  color: white;
+  font-size: larger;
 }
-
-#Home{
-    display: flex;
-    flex-direction: row;
-    background-color:whitesmoke;
-    justify-content: space-around;
-    border-radius: 10px;
-}
-.homeImg{
-    margin: 2%;
-    padding : 1%;
-    width: 50%;
-    height:590px;
-   opacity: 0.5;
-   border-radius: 10px 0 0 10PX;
-}
-
-.homepara
-{
-    margin: 7%;
-    color:gray;
-    font-family:cursive;
-    font-style: italic;
-    font-size:xx-large;
-    font-weight: 2000;
-}
-
-
-
-#AboutMe,#Experience,#projectHeading,#projectContent,#skillHeading,#footerHeading{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: x-large;
-    color: gray;
-    font-weight: light;
-    margin: 20px;
-}
-
-.eduHeading
-{
-    background-color: lightgrey;
-    border: 2px solid lightgrey;
-    
-    margin: 2px;
-    padding: 10px;
-    color: black;
-    font-size: xx-large;
-}
-
-#Education{
-    height:400px;
-    width:100%;
-    background-image: url("./resources/university.png");
-    border: 2px solid lightgrey;
-    border-radius: 10px;
-}
-table{
-    border-collapse: collapse;
-    
-}
-th,td{
-    border: 2px solid lightgrey;
-    border-radius: 10px;
-    padding: 15px;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: larger;
-    font-weight: bolder;
-    font-style: italic;
-    color:darkorange;
-}
-
-dt{
+@media screen and (max-width: 700px) {
+  .navListClass {
+    font-family: Arial, Helvetica, sans-serif;
     color: blue;
-    text-decoration: underline;
+    text-align: center;
+    font-weight: bolder;
+    font-size: small;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 0px;
+  }
 }
-
-#skillsContent{
-    width: 90%;
-    height:250px;
+#Home {
+  display: flex;
+  flex-direction: row;
+  background-color: whitesmoke;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+@media screen and (max-width: 600px) {
+  #Home {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
-}
-
-#skillsOuter{
+    flex-direction: column;
     background-color: whitesmoke;
     border-radius: 10px;
-    width: 90%;
-    margin-left: 70px;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: larger;
-    font-weight: bolder;
-    font-style: italic;
-    color: black;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 10px;
+  }
+}
+.homeImg {
+  margin: 2%;
+  padding: 1%;
+  width: 50%;
+  height: 590px;
+  opacity: 0.5;
+  border-radius: 10px 0 0 10px;
+}
+@media screen and (max-width: 600px) {
+  .homeImg {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    height: 300 px;
+    border: 0px;
+    border-radius: 10px 10px 0px 0px;
+  }
+}
+.homepara {
+  margin: 7%;
+  color: gray;
+  font-family: cursive;
+  font-style: italic;
+  font-size: xx-large;
+  font-weight: 2000;
+}
+@media screen and (max-width: 600px) {
+  .homepara {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    border-radius: 10px;
+    font-size: large;
+    margin-top: 10px;
+  }
+}
+#AboutMe,
+#Experience,
+#projectHeading,
+#projectContent,
+#skillHeading,
+#footerHeading {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: x-large;
+  color: gray;
+  font-weight: light;
+  margin: 20px;
 }
 
-#Connect{
- display: flex;
- flex-direction: row;
- justify-content: center;
+.eduHeading {
+  background-color: lightgrey;
+  border: 2px solid lightgrey;
+  margin: 2px;
+  padding: 10px;
+  color: black;
+  font-size: xx-large;
+}
+@media screen and (max-width: 600px) {
+  .eduHeading {
+    width: 100%;
+    background-color: white;
+    color: blue;
+    padding: 0px;
+    margin: 10px;
+    border: 0px;
+  }
 }
 
-.footercontent
-{
-    margin-left:50px;
-    color:blue;
-    text-decoration: none;
+#Education {
+  height: 400px;
+  width: 100%;
+  background-image: url("./resources/university.png");
+  border: 2px solid lightgrey;
+  border-radius: 10px;
+}
+@media screen and (max-width: 600px) {
+  #Education {
+    width: 100%;
+    background-image: none;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+table {
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 2px solid lightgrey;
+  border-radius: 10px;
+  padding: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: larger;
+  font-weight: bolder;
+  font-style: italic;
+  color: darkorange;
 }
 
+dt {
+  color: blue;
+  text-decoration: underline;
+}
+
+#skillsContent {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#skillsOuter {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  width: 90%;
+  margin-left: 70px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: larger;
+  font-weight: bolder;
+  font-style: italic;
+  color: black;
+}
+@media screen and (max-width: 600px) {
+  #skillsOuter {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    border: 0px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #skillsContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 10px;
+    border: 0px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #skills {
+    display: flex;
+    flex-direction: column;
+  }
+}
+#Connect {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footercontent {
+  margin-left: 50px;
+  color: blue;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  #Connect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+  }
+}
