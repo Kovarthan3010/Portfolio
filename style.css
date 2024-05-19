@@ -147,7 +147,7 @@
 table {
   border-collapse: collapse;
   width: 95%;
-  table-layout: auto;
+  table-layout: fixed;
 }
 th,
 td {
@@ -160,6 +160,13 @@ td {
   font-weight: bolder;
   font-style: italic;
   color: darkorange;
+}
+
+@media screen and (max-width: 600px) {
+  td,
+  th {
+    font-size: xx-small;
+  }
 }
 
 dt {
